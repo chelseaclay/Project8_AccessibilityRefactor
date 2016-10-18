@@ -1,0 +1,91 @@
+/* Survey page styles */
+
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+  min-width: 342px;
+}
+
+legend {
+  font-size: 1.25em;
+  text-align: left;
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  text-align: right;
+}
+
+.favs p {
+  margin-bottom: 5px;
+}
+
+.favs input,
+.favs select,
+.userContact input {
+  margin-bottom: 20px;
+}
+
+#albums,
+#favSong {
+  margin-top: 10px;
+}
+
+#Hazzard,
+#Bob,
+#Sally {
+  margin-left: 20px;
+}
+
+#submit {
+  font-size: 1em;
+  border: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #cc6600;
+  border-radius: 5px;
+  color: white;
+  box-shadow: inset 0 -13px 13px rgba(0, 0, 0, 0.45);
+  transition: all .5s;
+}
+
+#submit:hover,
+#submit:focus {
+  background-color: #ffc300;
+  color: black;
+  box-shadow: inset 0 -13px 13px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  background: #ff9932;
+  outline: none;
+}
+
+input[type="radio"]:focus+label {
+  color: #ff9932;
+}
+
+a:focus {
+  color: white;
+  outline: none;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+}
