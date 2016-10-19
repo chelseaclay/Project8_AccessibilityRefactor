@@ -23,6 +23,10 @@ a:hover {
   color: #cc6600; /*#999*/
 }
 
+.ariaText{
+  display: none;
+}
+
 /* Section Styles */
 
 .main-nav {

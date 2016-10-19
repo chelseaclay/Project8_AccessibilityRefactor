@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <div class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -18,18 +18,18 @@
       </ul>
     </div>
 
-    <header>
+    <header role="banner">
       <h1>Accessible Frog</h1>
       <h2>we make awesome music</h2>
     </header>
 
-    <main>
+    <main  role="main">
       <h3>Survey</h3>
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="Photo from crowd at live concert">
           <div class="container">
-            <form class = "survey">
+            <form class="survey">
               <fieldset class="favs">
                 <legend>Tell Us your Favorites</legend>
                 <p>Who is your favorite band member:</p>
@@ -63,6 +63,9 @@
 
                 <label for="favSong">What is your favorite song:</label><br />
                 <textarea id="favSong"></textarea>
+                <br />
+                <button type="submit" id="submit" aria-describedby="submitFavs">Submit</button>
+                <p class="ariaText" id="submitFavs">Submitting this form tells Accessible Frog's your favorite things.</p>
               </fieldset>
             </form>
           </div>
@@ -79,7 +82,8 @@
                   <label for="Name">Name:  </label><input type ="text" name="textfield" id="Name"><br />
                   <label for="Email">Email:  </label><input type ="email" name="textfield" id="Email"><br />
                   <label for="reEmail">Retype Email:  </label><input type ="email" name="textfield" id="reEmail"><br />
-                  <button type="submit" id="submit">Sign Up</button>
+                  <button type="submit" id="signup" aria-describedby="submitContact">Sign Up</button>
+                  <p class="ariaText" id="submitContact">Submitting this form signs you up for Accessible Frog's Newsletter.</p>
                 </fieldset>
               </form>
             </div>
@@ -87,7 +91,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social"><img src="img/twitter-32.png" alt="Twitter icon" /></a></li>
         <li><a href="#" class="social"><img src="img/youtube-32.png" alt="YouTube icon" /></a></li>
