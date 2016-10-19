@@ -45,7 +45,8 @@ legend {
   margin-left: 20px;
 }
 
-#submit {
+#submit,
+#signup {
   font-size: 1em;
   border: none;
   display: inline-block;
@@ -59,7 +60,9 @@ legend {
 }
 
 #submit:hover,
-#submit:focus {
+#submit:focus,
+#signup:hover,
+#signup:focus {
   background-color: #ffc300;
   color: black;
   box-shadow: inset 0 -13px 13px rgba(0, 0, 0, 0.5);
